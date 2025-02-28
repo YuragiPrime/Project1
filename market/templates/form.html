@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style_table.css' %}">
+
+<html>
+
+<head>
+    <title>Text Input Control</title>
+</head>
+
+<body>
+<form>
+    First name: <input type="text" name="first_name"/>
+    <br>
+    Last name: <input type="text" name="last_name"/>
+    <br>
+    User ID : <input type="text" name="user_id"/>
+    <br>
+    Password: <input type="password" name="password"/>
+    <br>
+    Description : <br/>
+    <textarea rows="5" cols="50" name="description">
+        Enter something...
+    </textarea>
+    <br>
+    <input type="checkbox" name="maths" value="on"> Maths
+    <br>
+    <input type="checkbox" name="physics" value="on"> Physics
+    <br>
+    <input type="checkbox" name="physics" value="on" size="100"> Autoloader
+    <br>
+    <input type="radio" name="subject" value="maths"> Maths
+    <br>
+    <input type="radio" name="subject" value="physics"> Physics
+    <br>
+    <select>
+        <option value="Maths" selected>Maths</option>
+        <option value="Physics">Physics</option>
+    </select>
+    <br>
+    <input type="file" name="fileupload" accept="image/*"/>
+    <br>
+    <input type="submit" name="submit" value="Submit"/>
+    <input type="reset" name="reset" value="Reset"/>
+    <input type="button" name="ok" value="OK"/>
+    <input type="image" name="imagebutton" src="/html/images/logo.png"/>
+    <br>
+    <p>This is page 10</p>
+    <input type="hidden" name="pagename" value="10"/>
+    <input type="submit" name="submit" value="Submit"/>
+    <input type="reset" name="reset" value="Reset"/>
+</form>
+</body>
+
+</html>
+
+
+{% endblock %}

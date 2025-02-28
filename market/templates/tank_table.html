@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style_table.css' %}">
+<style>
+  header, footer {
+    margin: 0;
+  }
+</style>
+{% for tank in tanks %}
+<table>
+  <tr>
+    <thead>
+      <th>Ім'я</th>
+      <th>Калібр, мм</th>
+      <th>Пробиття, мм</th>
+      <th>Броня, мм</th>
+      <th>Екіпаж</th>
+      <th>Автомат заряжання</th>
+      <th>Час перезарядки</th>
+      <th>Час створення</th>
+      <th>Нація</th>
+    </thead>
+    <tbody>
+      <td>{{ tank.name }}</td>
+      <td>{{ tank.caliber }}</td>
+      <td>{{ tank.penetration }}</td>
+      <td>{{ tank.armor }}</td>
+      <td>{{ tank.crew_amount }}</td>
+      <td>{{ tank.autoloader }}</td>
+      <td>{{ tank.time_reload }}</td>
+      <td>{{ tank.date_created }}</td>
+      <td>{{ tank.nation }}</td>
+    </tbody>
+  </tr>
+</table>
+
+
+{% endfor %}
+{% endblock %}

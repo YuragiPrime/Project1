@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Курси студента {{ student.first_name }} {{ student.last_name }}</h2>
+<ul>
+    {% for course in student.courses.all %}
+        <li>{{ course.name }} - {{ course.price }} грн</li>
+    {% endfor %}
+</ul>
+{% endblock %}

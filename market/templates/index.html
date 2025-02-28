@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <section>
+        <h2>New Arrivals</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="{% static 'images/desolator.jpg' %}" alt="Desolator">
+                <h3>Product 1</h3>
+                <p>Desolator</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/daedalus.jpg' %}" alt="Daedalus">
+                <h3>Product 2</h3>
+                <p>Daedalus</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/butterfly.jpg' %}" alt="Butterfly">
+                <h3>Product 3</h3>
+                <p>Butterfly</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/glimmer.jpg' %}" alt="Glimmer cape">
+                <h3>Product 4</h3>
+                <p>Glimmer cape</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/silver.jpg' %}" alt="Silver edge">
+                <h3>Product 5</h3>
+                <p>Silver edge</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/bf.jpg' %}" alt="Battle fury">
+                <h3>Product 6</h3>
+                <p>Battle fury</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/bkb.jpg' %}" alt="Black king bar">
+                <h3>Product 7</h3>
+                <p>Black king bar</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
